@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">FootballApp</string>
+
+    <!-- Bottom Nav Menu Text -->
+    <string name="Matches">Matches</string>
+    <string name="Teams">Teams</string>
+    <string name="Favorites">Favorites</string>
+
+    <!-- Tab Layout Menu Text -->
+    <string name="Last_Match">Last Match</string>
+    <string name="Next_Match">Next Match</string>
+    <string name="Team">Team</string>
+    <string name="Match">Match</string>
+    <string name="Overviews">Overviews</string>
+
+    <!-- Action Menu Text -->
+    <string name="AboutApp">AboutApp</string>
+
+    <!-- Search Menu Text -->
+    <string name="Search_Match">Search Match ...</string>
+    <string name="Search_Team">Search Team ...</string>
+
+    <!-- Layout Text -->
+    <string name="Date_Event">Date Event</string>
+    <string name="Time_Event">Time Event</string>
+    <string name="Home_Team">Home Team</string>
+    <string name="Zero">0</string>
+    <string name="VS">VS</string>
+    <string name="Away_Team">Away Team</string>
+    <string name="Position">Position</string>
+    <string name="Players">Players</string>
+    <string name="Goals">Goals</string>
+    <string name="Shots">Shots</string>
+    <string name="LINEUPS">LINEUPS</string>
+    <string name="Goalkeeper">Goalkeeper</string>
+    <string name="Defense">Defense</string>
+    <string name="Midfield">Midfield</string>
+    <string name="Forward">Forward</string>
+    <string name="Substitutes">Substitutes</string>
+    <string name="Established_Since">Established Since</string>
+    <string name="Stadium_Name">Stadium Name</string>
+    <string name="Profile">Profile</string>
+    <string name="Name">Name</string>
+    <string name="Date_Born">Date Born</string>
+    <string name="Nationality">Nationality</string>
+    <string name="Colon">:</string>
+    <string name="Weight">Weight</string>
+    <string name="Player_Weight">Player Weight</string>
+    <string name="Height">Height</string>
+    <string name="Player_Height">Player Height</string>
+    <string name="Club">Club</string>
+    <string name="Date_Signed">Date Signed</string>
+    <string name="Price">Price</string>
+    <string name="Salary">Salary</string>
+    <string name="Player_Description">Player Description</string>
+    <string name="robot_sofware_studio">_@robot_sofware_studio</string>
+    <string name="Version">Version</string>
+    <string name="App_Version">1.0 Beta</string>
+    <string name="License">License</string>
+    <string name="Author">Author</string>
+    <string name="Fajar_Agung_Pramana">Fajar Agung Pramana</string>
+    <string name="Indonesia">Indonesia</string>
+    <string name="Company">Company</string>
+    <string name="Robot_Software_inc">Robot Software inc</string>
+    <string name="Android_App_Specialist">Android App Specialist</string>
+    <string name="Address">Kp.Jati Baru RT.013/RW.006 Des.Tanjung Sari Kec.Cikarang Utara Kab.Bekasi 17530</string>
+
+
+    <!-- Toast Text -->
+    <string name="No_internet_connection">No internet connection, please try again!</string>
+    <string name="Events_not_Found">Events not Found !</string>
+    <string name="Teams_not_Found">Teams not Found !</string>
+    <string name="Failed_add_to_Calendar">This event has been passed, please chose the Next Match!</string>
+
+    <!-- Snackbar Text -->
+    <string name="Added_to_Favorite">Added to Favorite</string>
+    <string name="Remove_from_Favorite">Remove from Favorite</string>
+
+    <!-- String -->
+    <string name="Detail_Match">Detail Match</string>
+    <string name="Detail_Team">Detail Team</string>
+    <string name="About_App">About App</string>
+
+    <!-- Spinner Menu Text -->
+    <string-array name="list_league">
+        <item>English Premier League</item>
+        <item>Spanish La Liga</item>
+        <item>German Bundesliga</item>
+        <item>Italian Serie A</item>
+        <item>French League 1</item>
+    </string-array>
+
+</resources>

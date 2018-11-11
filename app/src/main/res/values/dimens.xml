@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text -->
+    <dimen name="text_low_size">12sp</dimen>
+    <dimen name="text_mid_size">15sp</dimen>
+    <dimen name="text_high_size">30sp</dimen>
+
+    <!-- Layout Margin -->
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="layout_vertical_margin">20dp</dimen>
+
+</resources>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/support_toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/launcher_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/launcher_footballa_app"/>
+
+            <TextView
+                android:id="@+id/app_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/launcher_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_high_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/company_account_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_name_tv"
+                android:layout_toEndOf="@id/launcher_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/robot_sofware_studio"
+                android:textSize="@dimen/text_low_size"
+                android:textColor="@color/colorGray"/>
+
+            <ImageView
+                android:id="@+id/version_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/launcher_image"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/launcher_image"
+                android:src="@drawable/ic_version" />
+
+            <TextView
+                android:id="@+id/version_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/launcher_image"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/version_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Version"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/app_version_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_tv"
+                android:layout_toEndOf="@id/version_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/App_Version"
+                android:textSize="@dimen/text_low_size"
+                android:textColor="@color/colorGray"/>
+
+            <ImageView
+                android:id="@+id/license_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_image"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/version_image"
+                android:src="@drawable/ic_license"/>
+
+            <TextView
+                android:id="@+id/license_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/license_image"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/license_image"
+                android:layout_alignBottom="@id/license_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/License"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorBlack"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_margin">
+
+            <TextView
+                android:id="@+id/author_tv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:text="@string/Author"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:id="@+id/person_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_tv"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/author_tv"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/person_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/person_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Fajar_Agung_Pramana"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/person_country_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_name_tv"
+                android:layout_toEndOf="@id/person_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Indonesia"
+                android:textSize="@dimen/text_low_size"
+                android:textColor="@color/colorGray"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_margin">
+
+            <TextView
+                android:id="@+id/company_tv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:text="@string/Company"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:id="@+id/company_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_tv"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/company_tv"
+                android:src="@drawable/ic_company" />
+
+            <TextView
+                android:id="@+id/company_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/company_image"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Robot_Software_inc"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/company_state_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_name_tv"
+                android:layout_toEndOf="@id/company_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Android_App_Specialist"
+                android:textSize="@dimen/text_low_size"
+                android:textColor="@color/colorGray"/>
+
+            <ImageView
+                android:id="@+id/company_location_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_state_tv"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/company_tv"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/company_location_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_below="@id/company_state_tv"
+                android:layout_toEndOf="@id/company_location_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:text="@string/Address"
+                android:textSize="@dimen/text_low_size"
+                android:textColor="@color/colorGray"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

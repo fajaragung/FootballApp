@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/support_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scroll_player_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/thumb_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_broken_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/layout_vertical_margin"
+                android:text="@string/Profile"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorGray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin">
+
+                <ImageView
+                    android:id="@+id/player_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_player_no_image"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/player_image"
+                    android:layout_marginStart="@dimen/layout_margin">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Name"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:text="@string/Date_Born"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv2"
+                        android:text="@string/Nationality"
+                        android:textColor="@color/colorGray"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/tv3"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+                        <TextView
+                            android:id="@+id/player_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Colon"
+                            android:textColor="@color/colorGray"/>
+
+                        <TextView
+                            android:id="@+id/player_date_born_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/player_name_tv"
+                            android:text="@string/Colon"
+                            android:textColor="@color/colorGray"/>
+
+                        <TextView
+                            android:id="@+id/player_nationality_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/player_date_born_tv"
+                            android:text="@string/Colon"
+                            android:textColor="@color/colorGray"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Weight"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/player_weight_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/weight"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Player_Weight"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Height"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/player_height_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Player_Height"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorGray"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/layout_vertical_margin"
+                android:text="@string/Club"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorGray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Club"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv4"
+                    android:text="@string/Date_Signed"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv5"
+                    android:text="@string/Price"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv6"
+                    android:text="@string/Salary"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv7"
+                    android:text="@string/Position"
+                    android:textColor="@color/colorGray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv5"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/player_club_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Colon"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/player_date_signed_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/player_club_tv"
+                        android:text="@string/Colon"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/player_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/player_date_signed_tv"
+                        android:text="@string/Colon"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/player_salary_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/player_price_tv"
+                        android:text="@string/Colon"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/player_position_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/player_salary_tv"
+                        android:text="@string/Colon"
+                        android:textColor="@color/colorGray"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/layout_vertical_margin"
+                android:text="@string/Player_Description"
+                android:textColor="@color/colorGray"/>
+
+            <TextView
+                android:id="@+id/player_description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_mid_size"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robotsoftwarestudio.footballapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_footballa_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher_footballa_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Activity 1 (Main Activity) -->
+        <activity
+            android:name=".views.main.MainActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Activity 2 (Search Events Activity) -->
+        <activity
+            android:name=".views.main.SearchEventsActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <!-- Activity 3 (Search Teams Activity) -->
+        <activity
+            android:name=".views.main.SearchTeamsActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <!-- Activity 4 (Detail Match Activity) -->
+        <activity
+            android:name=".views.main.DetailMatchActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".views.main.MainActivity"/>
+
+        <!-- Activity 5 (Detail Match Favorite) -->
+        <activity
+            android:name=".views.main.DetailMatchFavoriteActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".views.main.MainActivity"/>
+
+        <!-- Activity 6 (Detail Team Activity) -->
+        <activity
+            android:name=".views.main.DetailTeamActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".views.main.MainActivity"/>
+
+        <!-- Activity 7 (Detail player Activity) -->
+        <activity
+            android:name=".views.main.DetailPlayerActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <!-- Activity 8 (Detail Team Favorite activity) -->
+        <activity
+            android:name=".views.main.DetailTeamFavoriteActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".views.main.MainActivity"/>
+
+        <!-- Activity 9 (About App Activity) -->
+        <activity
+            android:name=".views.main.AboutAppActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".views.main.MainActivity"/>
+
+    </application>
+</manifest>
